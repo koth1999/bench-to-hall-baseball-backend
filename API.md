@@ -11,7 +11,12 @@
   "id": "career_123",
   "playerName": "김주원",
   "highSchool": "서울고등학교",
-  "position": "P",
+  "position": "P · 투수",
+  "subPosition": "SS",
+  "pitchForm": "overhand",
+  "pitchType": "power",
+  "batHand": "right",
+  "batType": "gap",
   "careerRoute": "draft",
   "season": 2031,
   "week": 12,
@@ -35,3 +40,5 @@
 서버에서는 사용자 인증 뒤 `careerId` 소유권을 확인하고, 게임 결과와 능력치 변화는 서버에서 계산한다. 클라이언트가 최종 수치를 신뢰하지 않도록 한다.
 
 `careerRoute`는 `draft`, `college`, `minor` 중 하나다. 이 값으로 이후 드래프트, 포스팅 시스템, MLB FA 협상 이벤트의 해금 조건과 로드맵을 결정한다.
+
+포지션 세부 정보는 투수일 때 `pitchForm`(오버핸드·사이드암·언더핸드)과 `pitchType`을, 타자일 때 `batHand`(우타·좌타·스위치)와 `batType`(거포·중장거리·컨택)을 사용한다. 내야·외야 선수는 `subPosition`도 저장한다.
