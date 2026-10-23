@@ -11,7 +11,7 @@
   "id": "career_123",
   "playerName": "김주원",
   "highSchool": "서울고등학교",
-  "position": "SP",
+  "position": "P",
   "careerRoute": "draft",
   "season": 2031,
   "week": 12,
